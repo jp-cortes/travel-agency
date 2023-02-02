@@ -11,16 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;700&display=swap" rel="stylesheet">
     <title>Travel agency</title>
 </head>
-<body>
+<body class="font-kanit">
 <header>
     <nav></nav>
 </header>
-<main class="w-full h-screen">
+<main class="w-full h-auto">
     <section id="home">
         <div class="w-full h-3/4">
             <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                <input class="outline-none rounded-full font-kanit shadow-md" placeholder="San Francisco" type="search" />
-                <button class="w-32 text-primary font-kanit font-semibold rounded-full bg-white p-4 shadow-md">
+                <input class="outline-none rounded-full  shadow-md transition duration-300 focus-within:shadow-md focus:ring- focus:w-10/12" placeholder="San Francisco" type="search" />
+                <button class="w-32 text-primary font-semibold rounded-full bg-white p-4 shadow-md transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
                     Explore
                 </button>
             </div>
@@ -29,10 +29,124 @@
             </div>
         </div>
     </section>
-    <section id="our-recomendations"></section>
-    <section id="trending"></section>
-    <section id="FAQ"></section>
+    <section class="p-20" id="recomendations">
+        <h3 class="text-primary text-3xl font-bold">Top destinations</h3>
+        <div class="w-auto h-80 items-center overflow-x-auto overscroll-x-contain flex space-x-6">
+            <div class="Card">
+                <div class="Card-img bg-norway"></div>
+                <div class="Card-info bg-secondary">
+                    <p class="text-white font-bold">Norway</p>
+                    <p class="text-white">Amazing landscapes</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card-img bg-new_york"></div>
+                <div class="Card-info">
+                    <p class="text-tertiary font-bold">New York</p>
+                    <p class="text-tertiary">Concrete jungle</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card-img bg-yosemite"></div>
+                <div class="Card-info bg-secondary">
+                    <p class="text-white font-bold">Yosemite</p>
+                    <p class="text-white">A break from the world</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card-img bg-seattle"></div>
+                <div class="Card-info">
+                    <p class="text-tertiary font-bold">Seattle</p>
+                    <p class="text-tertiary">Big city</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card-img bg-switzerland"></div>
+                <div class="Card-info bg-secondary">
+                    <p class="text-white font-bold">Switzerland</p>
+                    <p class="text-white">Best chocolate in world</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card-img bg-iceland"></div>
+                <div class="Card-info">
+                    <p class="text-tertiary font-bold">Iceland</p>
+                    <p class="text-tertiary">Like another planet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-6 mb-1 h-full w-full" id="trending-stays">
+
+            <h3 class="text-3xl text-primary font-semibold pb-6 mt-2">Trendind stays</h3>
+            <div class="w-full h-full flex flex-col space-y-4 items-center justify-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+                    <p class="text-3xl px-8 pt-8 pb-2 font-normal text-white">Chicago</p>
+                    <p class="text-sm pl-8 text-white mr-24">2 rooms, bathroom and kitchen.</p>
+                </div>
+                <div class="w-full h-96 bg-LA bg-cover rounded-xl">
+                    <p class="text-3xl px-8 pt-8 pb-2 font-normal text-white">Los Angeles</p>
+                    <p class="text-sm pl-8 text-white mr-24">4 rooms, 3 bathrooms, kitchen and private pool.</p>
+                </div>
+                <div class="w-full h-96 bg-miami bg-cover rounded-xl">
+                    <p class="text-3xl px-8 pt-8 pb-2 font-normal text-white">Miami</p>
+                    <p class="text-sm pl-8 text-white mr-24">3 rooms, 2 bathrooms, kitchen, and amazing sea view.</p>
+                </div>
+                <div class="w-full h-96 bg-bali bg-cover rounded-xl">
+                    <p class="text-3xl px-8 pt-8 pb-2 font-normal text-white">Bali</p>
+                    <p class="text-sm pl-8 text-white mr-24">2 rooms, bathrooms, kitchen and private pool.</p>
+                </div>
+            </div>
+        
+    </section>
+    <section class="w-full h-auto px-6 py-5" id="FAQ">
+        <div class="w-full h-full flex flex-col space-y-4">
+            <h3 class="text-3xl text-primary font-semibold pb-6 mt-2">FAQs</h3>
+
+        <div>
+            <p class="text-2xl text-primary font-normal  mt-2">Payment Methods</p>
+            <p class="pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                MasterCard, American Express, Paypal and Binance.</p>
+        </div>
+        <div>
+            <p class="text-2xl text-primary font-normal  mt-2">Cancellation Policy</p>
+            <p class="pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                MasterCard, American Express, Paypal and Binance.</p>
+        </div>
+        <div>
+            <p class="text-2xl text-primary font-normal mt-2">Long Stays </p>
+            <p class="pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                MasterCard, American Express, Paypal and Binance.</p>
+        </div>
+        <div>
+            <p class="text-2xl text-primary font-normal mt-2">Payment Methods</p>
+            <p class="pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                MasterCard, American Express, Paypal and Binance.</p>
+        </div>
+        <div>
+            <p class="text-2xl text-primary font-normal mt-2">Cancellation Policy</p>
+            <p class="pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                MasterCard, American Express, Paypal and Binance.</p>
+        </div>
+        </div>
+    </section>
 </main>
-<footer></footer>
+<footer class="w-full h auto bg-gray-50 px-6 space-y-2 pt-4 pb-14 text-gray-300">
+<h4 class="text-lg">About us</h4>
+<p class="text-sm">Investors</p>
+<p class="text-sm">Jobs</p>
+<p class="text-sm">Privacy policy</p>
+<p class="text-sm">Terms and conditions</p>
+<p class="text-sm">Travel agency, inc.</p>
+<p class="text-sm">Follow us</p>
+<div class="flex justify-start gap-3">
+    <a href="#">
+        <img src="./img/twitter.svg" alt="twitter">
+    </a>
+    <a href="#">
+        <img src="./img/instagram.svg" alt="instagram">
+    </a>
+</div>
+</footer>
 </body>
 </html>
