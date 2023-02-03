@@ -1,8 +1,5 @@
 #images
-/img
 
-*.jpg
-*.png
 
 #node_modules
 /node_modules/
