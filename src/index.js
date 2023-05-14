@@ -10,4 +10,3 @@ toggleButtonTabBar.addEventListener('click', toggleDarkmode);
 function toggleDarkmode () {
     container.classList.toggle('dark');
 }
-console.log('connect')
